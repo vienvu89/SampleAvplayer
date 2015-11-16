@@ -10,6 +10,9 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lbTest: UILabel!
+    @IBOutlet weak var btnTest: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +24,7 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func testPressed(sender: AnyObject) {
+        print("test")
+    }
 }

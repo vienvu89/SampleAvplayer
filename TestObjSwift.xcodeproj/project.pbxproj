@@ -14,6 +14,9 @@
 		FB8653001BDE5F3C0046E525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8652FE1BDE5F3C0046E525 /* LaunchScreen.storyboard */; };
 		FB86530B1BDE5F3C0046E525 /* TestObjSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86530A1BDE5F3C0046E525 /* TestObjSwiftTests.swift */; };
 		FB8653161BDE5F3C0046E525 /* TestObjSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8653151BDE5F3C0046E525 /* TestObjSwiftUITests.swift */; };
+		FB8653281BDE5F640046E525 /* BlockObj.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8653271BDE5F640046E525 /* BlockObj.m */; };
+		FBC90C091BF9F244006F3694 /* M1F1-int8-AFsp.aif in Resources */ = {isa = PBXBuildFile; fileRef = FBC90C081BF9F243006F3694 /* M1F1-int8-AFsp.aif */; };
+		FBFA9CD81BDF1B3F0079E5E7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA9CD71BDF1B3F0079E5E7 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		FB8653111BDE5F3C0046E525 /* TestObjSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestObjSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8653151BDE5F3C0046E525 /* TestObjSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjSwiftUITests.swift; sourceTree = "<group>"; };
 		FB8653171BDE5F3C0046E525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8653251BDE5F640046E525 /* TestObjSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestObjSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB8653261BDE5F640046E525 /* BlockObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockObj.h; sourceTree = "<group>"; };
+		FB8653271BDE5F640046E525 /* BlockObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockObj.m; sourceTree = "<group>"; };
+		FBC90C081BF9F243006F3694 /* M1F1-int8-AFsp.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "M1F1-int8-AFsp.aif"; sourceTree = "<group>"; };
+		FBFA9CD71BDF1B3F0079E5E7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,11 @@
 				FB8652FC1BDE5F3C0046E525 /* Assets.xcassets */,
 				FB8652FE1BDE5F3C0046E525 /* LaunchScreen.storyboard */,
 				FB8653011BDE5F3C0046E525 /* Info.plist */,
+				FB8653261BDE5F640046E525 /* BlockObj.h */,
+				FB8653271BDE5F640046E525 /* BlockObj.m */,
+				FB8653251BDE5F640046E525 /* TestObjSwift-Bridging-Header.h */,
+				FBFA9CD71BDF1B3F0079E5E7 /* TableViewCell.swift */,
+				FBC90C081BF9F243006F3694 /* M1F1-int8-AFsp.aif */,
 			);
 			path = TestObjSwift;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 				TargetAttributes = {
 					FB8652F11BDE5F3C0046E525 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = EVEWM7299Q;
 					};
 					FB8653051BDE5F3C0046E525 = {
 						CreatedOnToolsVersion = 7.1;
@@ -229,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC90C091BF9F244006F3694 /* M1F1-int8-AFsp.aif in Resources */,
 				FB8653001BDE5F3C0046E525 /* LaunchScreen.storyboard in Resources */,
 				FB8652FD1BDE5F3C0046E525 /* Assets.xcassets in Resources */,
 				FB8652FB1BDE5F3C0046E525 /* Main.storyboard in Resources */,
@@ -257,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB8652F81BDE5F3C0046E525 /* ViewController.swift in Sources */,
+				FBFA9CD81BDF1B3F0079E5E7 /* TableViewCell.swift in Sources */,
 				FB8652F61BDE5F3C0046E525 /* AppDelegate.swift in Sources */,
+				FB8653281BDE5F640046E525 /* BlockObj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +414,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestObjSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.TestObjSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjSwift/TestObjSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestObjSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VienVu.TestObjSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestObjSwift/TestObjSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -482,6 +506,7 @@
 				FB86531C1BDE5F3C0046E525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB86531D1BDE5F3C0046E525 /* Build configuration list for PBXNativeTarget "TestObjSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				FB86531F1BDE5F3C0046E525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB8653201BDE5F3C0046E525 /* Build configuration list for PBXNativeTarget "TestObjSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				FB8653221BDE5F3C0046E525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

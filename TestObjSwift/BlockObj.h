@@ -10,4 +10,7 @@
 
 @interface BlockObj : NSObject
 
++ (void) while2:(id)obj name:(void(^)(NSString*))callback;
+- (void)complexMethodWithArg1:(id)arg1 arg2:(id)arg2 arg3:(id)arg3;
+
 @end

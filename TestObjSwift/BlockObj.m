@@ -10,4 +10,8 @@
 
 @implementation BlockObj
 
++ (void)while2:(id)obj name:(void (^)(NSString *))callback {
+    
+}
+
 @end
